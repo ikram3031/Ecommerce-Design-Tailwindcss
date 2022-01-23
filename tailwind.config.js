@@ -2,8 +2,24 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens:{
+      sm: '576px',
+      md: '768px',
+      lg: '992px',
+      xl: '1200px',
+    },
+    container:{
+      center:true,
+      padding: '1rem',
+    },
     extend: {
+      fontFamily:{
+        poppins:"'Poppins', sans-serif", 
+        roboto:"'Roboto', sans-serif",
+      },
       colors: {
+        'primary':'#fd3d57',
+        'second': '#2b2d42',
         'theme-blue': '#5515ef',
         'theme-blue-dark': '#3c01ca',
         'theme-pink': '#eb589e',
@@ -27,6 +43,8 @@ module.exports = {
   },
   variants: {
     extend: {
+      display:['group-hover'],
+      visibility:['group-hover'],
       scale: ['active', 'group-hover'],
       rotate: ['group-hover'],
       inset: ['hover', 'group-hover'],
