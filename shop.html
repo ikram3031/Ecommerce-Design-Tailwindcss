@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/tailwind.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Ecommerce</title>
+</head>
+ <body class="font-poppins">
+    <!--Header-->
+    <header class="py-4 bg-white shadow-sm">
+        <container class="container flex items-center justify-between">
+            <!--Logo-->
+            <a>
+                <img class="w-32" src="imgs/logo.svg" alt="">
+            </a>
+            <!--Searchbar-->
+            <div class="relative flex w-full max-w-xl">
+                <span class="absolute text-lg text-gray-400 left-4 top-3">
+                    <i class="fas fa-search"></i>
+                </span>
+                <input class="w-full py-3 pl-12 border border-r-0 border-primary rounded-l-md focus:outline-none" type="text" placeholder="search">
+                <button class="px-8 text-white transition border bg-primary border-primary rounded-r-md hover:bg-transparent hover:text-primary">
+                    search
+                </button>
+            </div>
+            <!--Icons-->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="relative text-center text-gray-700 transition hover:text-primary">
+                    <div class="text-2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="leading-3 text xs">
+                        Wishlist
+                    </div>
+                    <span class="absolute right-0 flex items-center justify-center w-5 h-5 mx-1 text-xs text-white rounded-full -top-1 bg-primary">3</span>
+                </a>
+                <a href="#" class="relative text-center text-gray-700 transition hover:text-primary">
+                    <div class="text-2xl">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="leading-3 text xs">
+                        Cart
+                    </div>
+                    <span class="absolute flex items-center justify-center w-5 h-5 text-xs text-white rounded-full -right-1 -top-1 bg-primary">5</span>
+                </a>
+                <a href="#" class="relative text-center text-gray-700 transition hover:text-primary">
+                    <div class="text-2xl">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="leading-3 text xs">
+                        Account
+                    </div>                    
+                </a>
+            </div>
+        </container>
+    </header>
+    <!-- Header End-->
+    <!--Nav BAr-->
+    <nav class="bg-gray-800">
+        <div class="container flex">
+            <!--All category-->
+            <div class="relative flex items-center px-8 py-4 cursor-pointer bg-primary group">
+                <span class="text-white">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <span class="ml-2 text-white capitalize">
+                    All categories
+                </span>
+
+                <div class="absolute left-0 invisible w-full py-3 capitalize transition duration-100 bg-white divide-y divide-gray-300 shadow-md opacity-0 divide-dashed top-full group-hover:opacity-100 group-hover:visible">
+                    
+                    <a href="#" class="flex items-center px-6 py-3 transition hover:bg-gray-100">
+                        <i class="fas fa-male"></i>
+                        <span class="ml-6 text-sm text-gray-600">Men</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 transition hover:bg-gray-100">
+                        <i class="fas fa-male"></i>
+                        <span class="ml-6 text-sm text-gray-600">Men</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 transition hover:bg-gray-100">
+                        <i class="fas fa-male"></i>
+                        <span class="ml-6 text-sm text-gray-600">Men</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 transition hover:bg-gray-100">
+                        <i class="fas fa-male"></i>
+                        <span class="ml-6 text-sm text-gray-600">Men</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 transition hover:bg-gray-100">
+                        <i class="fas fa-male"></i>
+                        <span class="ml-6 text-sm text-gray-600">Men</span>
+                    </a>
+                   
+                </div>
+            </div>
+            <!--navbar links-->
+            <div class="flex items-center justify-between flex-grow pl-12">
+                <div class="flex items-center space-x-6 capitalize">
+                    <a href="index.html" class="text-gray-200 transition hover:text-white">
+                        Home
+                    </a>
+                    <a href="shop.html" class="text-gray-200 transition hover:text-white">
+                        Shop
+                    </a> 
+                    <a href="#" class="text-gray-200 transition hover:text-white">
+                        About us
+                    </a>                 
+                    <a href="#" class="text-gray-200 transition hover:text-white">
+                        Contact us
+                    </a> 
+                </div>
+                <a href="#" class="text-gray-200 transition hover:text-white">Login/Register</a>
+            </div>
+        </div>        
+    </nav>
+    <!--Nav Bar ENd-->
+
+    <!--Breadcrums-->
+    <div class="container py-4 flex items-center gap-3">
+        <a href="index.html" class="text-primary text-base">
+            <i class="fas fa-home"></i>
+        </a>
+        <span class="text-sm text-gray-400">
+            <i class="fas fa-chevron-right "></i>
+        </span>
+        <p class="text-gray-600 font-medium">Shop</p>
+    </div>
+    <!--End Breadcrums-->
+
+    <!--SHop Wrapper-->
+    <div class="container grid grid-cols-4 gap-6 pt-4 pb-16 items-start">
+        <!--SIdebar-->
+        <div class="col-span-1 bg-white px-4 pb-4 shadow rounded overflow-hidden">
+            <div class="divide-y divide-gray-200 space-y-5 relative">
+                <!--category filter-->
+                <div class="my-3">
+                    <h3 class="text-xl textgray-800 mb-3 uppercase font-medium">
+                        Categories
+                    </h3>
+                    <div class="space-y-2">
+                        <!--SIngle Category-->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                            <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Women</label>
+                            
+                        </div>
+                        <!--SIngle Category-->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                            <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Men</label>
+                            <div class="ml-auto text-gray-600 text-sm">(9)</div>
+                        </div>
+                        <!--SIngle Category-->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                            <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Shoes</label>
+                            <div class="ml-auto text-gray-600 text-sm">(19)</div>
+                        </div>
+                        <!--SIngle Category-->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                            <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Computer</label>
+                            <div class="ml-auto text-gray-600 text-sm">(35)</div>
+                        </div>
+                    </div>
+                </div>
+                <!--category filter end-->
+                <!--Brand filter-->
+                <div class="py-3">
+                    <h3 class="text-xl textgray-800 mb-3 uppercase font-medium">
+                        Brands
+                    </h3>
+                    <div class="space-y-2">
+                        <!--SIngle Brand-->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                            <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Adidas</label>
+                            
+                        </div>
+                        <!--SIngle Brand-->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                            <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Nike</label>
+                            
+                        </div>
+                        <!--SIngle Brand-->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                            <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Easy</label>
+                            
+                        </div>
+                        <!--SIngle Brand-->
+                        <div class="flex items-center">
+                            <input type="checkbox" id="cat-1" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                            <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Arong</label>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!--Brand filter end-->
+
+                <!--Price filter-->
+                <div class="pt-4">
+                    <h3 class="text-xl textgray-800 mb-3 uppercase font-medium">
+                        Price
+                    </h3> 
+                    <div class="mt-4 flex items-center">
+                        <input type="text" class="w-full focus:ring-0 border-gray-300 focus:border-primary px-3 py-1 text-gray-600 text-sm shadow-sm rounded" placeholder="min">
+                        <span class="mx-3 text-gray-500">-</span>
+                        <input type="text" class="w-full focus:ring-0 border-gray-300 focus:border-primary px-3 py-1 text-gray-600 text-sm shadow-sm rounded" placeholder="max">
+                    </div>                   
+                </div>
+                <!--Price filter end-->
+
+                <!-- size filter-->
+                <div class="pt-4">
+                    <h3 class="text-xl textgray-800 mb-3 uppercase font-medium">
+                        Size
+                    </h3>
+                    <div class="flex items-center gap-2">
+                        <!--single size-->
+                        <div class="size-selector">
+                            <input type="radio" name="size" class="hidden" id="size">
+                            <label for="size-xs" class="text-xs border border-gray-200 rounded-sm h-6 w-6 items-center flex justify-center cursor-pointer shadow-sm text-gray-600">
+                                XS
+                            </label>
+                        </div>
+                        <!--single size end-->
+                    </div>
+                </div>
+                <!--size filter end-->     
+            </div>
+        </div>
+        <!--End SIdebar-->
+    </div>
+    <!--End SHop Wrapper-->
+</body>
+</html>

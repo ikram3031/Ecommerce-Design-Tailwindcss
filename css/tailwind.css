@@ -16,6 +16,12 @@
   }
 }
 
+@layer components{
+  .size-selector input:checked + label {
+    @apply bg-primary text-white;
+  }
+}
+
 .body2 {
   font-family: "Open Sans", sans-serif;
 }

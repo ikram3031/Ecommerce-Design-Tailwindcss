@@ -50,5 +50,7 @@ module.exports = {
       inset: ['hover', 'group-hover'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
