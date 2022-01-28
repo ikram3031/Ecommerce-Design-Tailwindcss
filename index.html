@@ -10,7 +10,7 @@
 </head>
  <body class="font-poppins">
     <!--Header-->
-    <header class="py-4 bg-white shadow-sm">
+    <header class="sticky py-4 bg-white shadow-sm">
         <container class="container flex items-center justify-between">
             <!--Logo-->
             <a>
@@ -835,5 +835,15 @@
         </div>
     </div>
     <!--end copyright-->
+
+
+    <!--Javascript-->
+    <script type="text/Javascript">
+        wind.addEventListener("scroll",function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    
  </body>
 </html>
